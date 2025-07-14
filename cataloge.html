@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cataloge</title>
+    <link rel="stylesheet" href="styles/cataloge.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <!-- index.html -->
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        });
+    </script>
+  </head>
+  <body style="margin-top: 100px">
+    <div class="books-grid">
+      <div class="books-preview">
+        <div class="cover">
+          <a href="book1.html" target="_blank">
+            <img src="pics/books/book1.jpg" class="cimg" />
+          </a>
+        </div>
+        <div class="books-info">
+          <p class="books-title">Ekadoli</p>
+          <p class="auther-name">Hanan Lashin</p>
+          <p class="books-genre">adventure romantic</p>
+          <p class="in-s">In-stock</p>
+        </div>
+      </div>
+
+      <div class="books-preview">
+        <div class="cover">
+          <a href="book2.html" target="_blank">
+            <img src="pics/books/book2.jpg" class="cimg" />
+          </a>
+        </div>
+        <div class="books-info">
+          <p class="books-title">Zicola Land</p>
+          <p class="auther-name">Amr Abd-Elhamid</p>
+          <p class="books-genre">fiction romantic</p>
+          <p class="in-s">In-stock</p>
+        </div>
+      </div>
+
+      <div class="books-preview">
+        <div class="cover">
+          <a href="book3.html" target="_blank">
+            <img src="pics/books/book3.webp" class="cimg" />
+          </a>
+        </div>
+        <div class="books-info">
+          <p class="books-title">White Jasmine</p>
+          <p class="auther-name">Khaula Hamdy</p>
+          <p class="books-genre">romantic</p>
+          <p class="out-s">out-of-stock</p>
+        </div>
+      </div>
+
+      <div class="books-preview">
+        <div class="cover">
+          <a href="book4.html" target="_blank">
+            <img src="pics/books/book4.jpg" class="cimg" />
+          </a>
+        </div>
+        <div class="books-info">
+          <p class="books-title">Black Palace</p>
+          <p class="auther-name">Mona Salma</p>
+          <p class="books-genre">crime</p>
+          <p class="out-s">out-of-stock</p>
+        </div>
+      </div>
+
+      <div class="books-preview">
+        <div class="cover">
+          <a href="book5.html" target="_blank">
+            <img src="pics/books/book5.webp" class="cimg" />
+          </a>
+        </div>
+        <div class="books-info">
+          <p class="books-title">House of Conjuring</p>
+          <p class="auther-name">Marwa Gawhar</p>
+          <p class="books-genre">horror</p>
+          <p class="in-s">In-stock</p>
+        </div>
+      </div>
+
+      <div class="books-preview">
+        <div class="cover">
+          <a href="book6.html" target="_blank">
+            <img src="pics/books/book6.webp" class="cimg" />
+          </a>
+        </div>
+        <div class="books-info">
+          <p class="books-title">Dao</p>
+          <p class="auther-name">Doaa Abd-elrahman</p>
+          <p class="books-genre">mystery</p>
+          <p class="out-s">out-of-stock</p>
+        </div>
+      </div>
+
+      <div class="books-preview">
+        <div class="cover">
+          <a href="book7.html" target="_blank">
+            <img src="pics/books/book7.webp" class="cimg" />
+          </a>
+        </div>
+        <div class="books-info">
+          <p class="books-title">Harry Potter</p>
+          <p class="auther-name">J.k. Rowling</p>
+          <p class="books-genre">magic</p>
+          <p class="in-s">In-stock</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>House of Conjuring</title>
+    <link rel="stylesheet" href="styles/purchase.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <!-- index.html -->
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        });
+    </script>
+  </head>
+  <body>
+    <div class="book-purchase">
+      <div class="book-detail">
+        <div class="ccon">
+          <div>
+            <img src="pics/books/book5.webp" class="cover" />
+          </div>
+          <div class="detail">
+            <div class="books-title">House of Conjuring</div>
+            <div class="auther-name">Marwa Gawhar</div>
+          </div>
+        </div>
+        "عندما قابلت حارس البيت الحقيقي الذي حدثت فيه كل تلك الوقائع، أخبرني أن
+        جميع سكان الحي يعرفون جيداً حقيقة الأصوات التي تأتي من المنزل كل ليلة،
+        وحقيقة أن سكان البيت من الجن، أهل الحي قرروا عدم المرور بالقرب من المنزل
+        ليلاً وقرروا عدم محاولة هدم المنزل خوفاً مما قد يحدث" في هذه الرواية
+        المثيرة نتعرف على ما يحدث في منزل التعويذة، ما سر التعويذة وما سر ما حدث
+        في المنزل ليلاً؟ وسر ذلك الصراع بين عائلة "الخولي" وعائلة "السعدني" على
+        المنزل.
+      </div>
+      <a href="purchaseform.html" target="_blank">
+        <button class="buy">Buy Now</button></a
+      >
+    </div>
+  </body>
+</html>

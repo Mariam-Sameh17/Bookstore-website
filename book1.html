@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ekadoli</title>
+    <link rel="stylesheet" href="styles/purchase.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <!-- index.html -->
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        });
+    </script>
+  </head>
+  <body>
+    <div class="book-purchase">
+      <div class="book-detail">
+        <div class="ccon">
+          <div>
+            <img src="pics/books/book1.jpg" class="cover" />
+          </div>
+          <div class="detail">
+            <div class="books-title">Ekadoli</div>
+            <div class="auther-name">Hanan Lashin</div>
+          </div>
+        </div>
+        سعف النخيل يظلل الأفق من بعيد وكأنّه سحاب أخضر. صيحة غريبة صمّت أذنيه
+        ثُمّ شعر فجأة بمخالب تقبض على كتفيه، فرفع بصره ورأى طائرًا عملاقًا يبسط
+        جناحيه مظللًا فوق رأسه، تسارعت أنفاسه وهو يطير على ارتفاعٍ شاهق فوق وادٍ
+        عميق يقطعه نهر ماؤه رقراق زمرّدي اللون! لاحت من بعيد أكواخٌ صغيرة لكنّها
+        متقاربة مصفوفة بانتظام في مجاميع يفصل بينها ممرّات أرضها مغطاة بزهور
+        صغيرة صفراء. تناهى إلى سمعه صوت أنثوي ناعم، كان يناديه ويكرر كلمة غريبة
+        لم يدرك كنهها! إيكادولي....إيكادولي
+      </div>
+      <a href="purchaseform.html" target="_blank">
+        <button class="buy">Buy Now</button></a
+      >
+    </div>
+  </body>
+</html>

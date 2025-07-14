@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zicola Land</title>
+    <link rel="stylesheet" href="styles/purchase.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <!-- index.html -->
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        });
+    </script>
+  </head>
+  <body>
+    <div class="book-purchase">
+      <div class="book-detail">
+        <div class="ccon">
+          <div>
+            <img src="pics/books/book2.jpg" class="cover" />
+          </div>
+          <div class="detail">
+            <div class="books-title">Zicola Land</div>
+            <div class="auther-name">amr Abd-Elhamid</div>
+          </div>
+        </div>
+        هل جرّبت أن تتعامل بعملة مختلفة عن العملات الورقية .. ليست معدنية وليست
+        ذهبية ...الثروة هنا من نوع آخر ... لن تدفع مالاً لتأخذ ..بل ستدفع من
+        ذكائك ..ستدفع من وحدات عقلك... ولكن انتبه فـ للثروة حدود ...فهنا المفلس
+        لا يعامل باحتقار أو يُهان كما يحدث في عالمك .. بل يتعرض للموت .. احذر ..
+        فأنت .. في أرض زيكولا
+      </div>
+      <a href="purchaseform.html" target="_blank">
+        <button class="buy">Buy Now</button></a
+      >
+    </div>
+  </body>
+</html>

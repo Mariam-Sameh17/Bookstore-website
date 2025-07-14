@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dao</title>
+    <link rel="stylesheet" href="styles/purchase.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <!-- index.html -->
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        });
+    </script>
+  </head>
+  <body>
+    <div class="book-purchase">
+      <div class="book-detail">
+        <div class="ccon">
+          <div>
+            <img src="pics/books/book6.webp" class="cover" />
+          </div>
+          <div class="detail">
+            <div class="books-title">Dao</div>
+            <div class="auther-name">Doaa Abd-elrahman</div>
+          </div>
+        </div>
+        رَفعتْ نظرَاتِها إليه بفخر يتناوب على ابتسامتها مع الخجل كلما حدثها
+        هكذا، وكأنها كل ما يملك، لايحيد عنها بنظراته، وكأنما هي من علَّمته
+        النظر!، كما علَّمته كيف يحتمي بدفء لقاءاتهما المتكررة من الغربة التي
+        تضرب بصقيعها أرجاءه، ولأجل ذلك تحمَّل في بُعدها وَصبًا ولقي ما لقي من
+        الفراق نصبًا، لم تخشَ عليه من السِحر وكأنما تغار على سِحرها أن يكون إلا
+        الأعلى
+      </div>
+      <a href="purchaseform.html" target="_blank">
+        <button class="buy">Buy Now</button></a
+      >
+    </div>
+  </body>
+</html>

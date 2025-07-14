@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Black Palace</title>
+    <link rel="stylesheet" href="styles/purchase.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <!-- index.html -->
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        });
+    </script>
+  </head>
+  <body>
+    <div class="book-purchase">
+      <div class="book-detail">
+        <div class="ccon">
+          <div>
+            <img src="pics/books/book4.jpg" class="cover" />
+          </div>
+          <div class="detail">
+            <div class="books-title">Black Palace</div>
+            <div class="auther-name">Mona Salma</div>
+          </div>
+        </div>
+        اشتَهَتْ أن تكون سيدة القصر المَهيب المُحاط بحديقـة غَنَّـاء؛ أزهـار
+        وأشجار وأثمار تسر الناظرين، غير مُدركة لظلال الماضي الأليم التي تَجثم
+        بثقلها فوقه، ولا أطياف الحُب التي تُحاول أن تتسَوَّر مِحراب قلبها بغفلةٍ
+        منها. فهل ستخرج مِن القصر بنفس الأحلام التي دخلتهُ بها، أم ستعجِنها
+        التجربة بماءِ الندم؟
+      </div>
+      <a href="purchaseform.html" target="_blank">
+        <button class="buy">Buy Now</button></a
+      >
+    </div>
+  </body>
+</html>

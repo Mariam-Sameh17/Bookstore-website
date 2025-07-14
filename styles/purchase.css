@@ -1,0 +1,91 @@
+body {
+  padding: 40px;
+  margin-top: 0px;
+  background-color: antiquewhite;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+}
+
+.book-detail {
+  text-align: end;
+  width: 400px;
+  background-color: darkseagreen;
+  padding: 50px;
+  color: aliceblue;
+  border-radius: 20px;
+  font-size: 40px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.book-purchase {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover {
+  border-radius: 10px;
+  width: 100%;
+  float: left;
+}
+
+.ccon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  float: left;
+  margin-right: 10px;
+}
+
+.books-title {
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.auther-name {
+  font-size: 30px;
+  color: honeydew;
+  text-align: center;
+}
+
+.detail {
+  align-self: center;
+  background-color: darkolivegreen;
+  padding: 15px;
+  color: azure;
+  border-radius: 20px;
+  width: 28%;
+  text-align: center;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.buy {
+  margin-top: 30px;
+  border: none;
+  background-color: olive;
+  padding: 20px;
+  border-radius: 40px;
+  color: aliceblue;
+  font-size: 30px;
+}
+
+button:hover {
+  transition: padding 0.5s;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+button:active {
+  opacity: 0.7;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>White Jasmine</title>
+    <link rel="stylesheet" href="styles/purchase.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <!-- index.html -->
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        });
+    </script>
+  </head>
+  <body>
+    <div class="book-purchase">
+      <div class="book-detail">
+        <div class="ccon">
+          <div>
+            <img src="pics/books/book3.webp" class="cover" />
+          </div>
+          <div class="detail">
+            <div class="books-title">White Jasmine</div>
+            <div class="auther-name">Khaula Hamdy</div>
+          </div>
+        </div>
+        -لقد وقعت في حبّه منذ اللّحظة الأولى. أعرف، من الغريب أن تقول أمّ هذا..
+        الأمّ تحبّ أولادها جميعهم. لكنّني كنت أحتاج بعض الوقت لأحبّ أطفالي! كنت
+        أتعوّد عليهم تدريجيّا، ثمّ أتقبّل أشكالهم وأشعر بانتمائهم إليّ.. لكن
+        أحمد، كنت في حالة حبّ منذ ولادته. أتأمّله طوال اليوم، كأنّه طفلي الأوّل.
+        كان ملاكًا صغيرًا أبيض تمامًا. بياضه النّاصع كان مدهشًا، مثل قطعة ثلج في
+        بلاد حارّة، وكان يرضع وينام بهدوء، ولم يكن يبكي مثل الأطفال. كان وجوده
+        إلى جواري يشعرني بالصّفاء والسّكينة. وقد كنت أحتاج إلى ذلك، حتّى أقدر
+        على مواجهة ما هو آت.
+      </div>
+      <a href="purchaseform.html" target="_blank">
+        <button class="buy">Buy Now</button></a
+      >
+    </div>
+  </body>
+</html>
