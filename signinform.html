@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles/formstyle.css" />
   </head>
   <body>
-    <form>
+    <form id="signin">
       <h1>sign in form</h1>
 
       <input
@@ -14,17 +14,24 @@
         style="display: block"
         class="textbox email"
       />
-
+      <div class="error eerr"></div>
+      <input
+        type="text"
+        placeholder="Username"
+        class="textbox fname"
+        style="width: 94%"
+      />
+      <div class="error nerr"></div>
       <input
         type="password"
         placeholder="Password"
-        class="textbox"
+        class="textbox pass"
         style="width: 94%"
       />
-
-      <a href="home.html" target="_blank">
+      <div class="error perr"></div>
+      <a>
         <input
-          type="button"
+          type="submit"
           class="submitbutton"
           value="Sign in"
           style="font-size: 100%"
@@ -33,5 +40,6 @@
         <input type="button" value="forget password" class="b" />
       </a>
     </form>
+    <script src="script/sign.js"></script>
   </body>
 </html>
