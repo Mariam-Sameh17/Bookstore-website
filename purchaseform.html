@@ -4,15 +4,25 @@
     <title>purchase form</title>
     <link rel="stylesheet" href="styles/formstyle.css" />
     <body>
-      <form>
+      <form id="form">
         <h1>Complete Your order</h1>
 
         <input
           type="text"
+          placeholder="Name"
+          class="textbox name"
+          style="width: 94%; margin-top: 0"
+        />
+
+        <div class="error nerr"></div>
+
+        <input
+          type="text"
           placeholder="Mobile Phone"
-          class="textbox"
+          class="textbox mobile"
           style="width: 94%"
         />
+        <div class="error merr"></div>
 
         <input
           type="email"
@@ -21,12 +31,20 @@
           class="textbox email"
         />
 
-        <input type="text" placeholder="Country" class="textbox" />
+        <div class="error eerr"></div>
 
-        <input type="text" placeholder="City" class="textbox" />
+        <input type="text" placeholder="Country" class="textbox Country" />
 
-        <input type="text" placeholder="Postal code" class="textbox" />
+        <input type="text" placeholder="City" class="textbox city" />
 
+        <div class="error cerr"></div>
+
+        <input
+          type="text"
+          placeholder="Postal code"
+          class="textbox postalcode"
+        />
+        <div class="error perr"></div>
         <input
           type="text"
           placeholder="Notes"
@@ -40,6 +58,8 @@
           value="Proceed to pay"
           style="font-size: 100%"
         />
+        <div class="msg"></div>
+        <script src="script/purchase.js"></script>
       </form>
     </body>
   </head>
