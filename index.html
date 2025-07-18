@@ -11,12 +11,14 @@
     />
   </head>
   <body>
-    <form>
+    <form id="signup">
       <h1>sign up form</h1>
 
-      <input type="text" placeholder="First Name" class="textbox" />
+      <input type="text" placeholder="First Name" class="textbox fname" />
 
-      <input type="text" placeholder="Second Name" class="textbox" />
+      <input type="text" placeholder="Second Name" class="textbox sname" />
+
+      <div class="error nerr"></div>
 
       <input
         type="email"
@@ -25,26 +27,42 @@
         class="textbox email"
       />
 
-      <div id="date">
-        <label for="birthday">Enter your birthday</label><br />
-        <input type="date" style="background-color: ghostwhite; border: none" />
-      </div>
+      <div class="error eerr"></div>
 
-      <div id="gender">
+      <div id="date" style="margin-top: 15px">
+        <label>Enter your birthday</label><br />
+        <input
+          type="date"
+          style="background-color: ghostwhite; border: none"
+          class="date"
+        />
+      </div>
+      <div class="error derr"></div>
+
+      <div id="gender" style="margin-top: 15px">
         <label> Select your gender </label><br />
 
-        <input type="radio" name="gender" id="Male" />
+        <input type="radio" name="gender" id="Male" value="male" />
         <label for="Male" class="text">Male</label>
 
-        <input type="radio" name="gender" id="Female" />
+        <input type="radio" name="gender" id="Female" value="female" />
         <label for="Female" class="text">Female</label><br />
       </div>
 
-      <input type="password" placeholder="Password" class="textbox" />
-      <input type="password" placeholder="Confirm Password" class="textbox" />
-      <a href="home.html" target="_blank">
+      <div class="error gerr"></div>
+
+      <input type="password" placeholder="Password" class="textbox pass" />
+      <input
+        type="password"
+        placeholder="Confirm Password"
+        class="textbox cpass"
+      />
+
+      <div class="error perr"></div>
+
+      <a>
         <input
-          type="button"
+          type="submit"
           class="submitbutton"
           value="Sign up"
           style="font-size: 100%"
@@ -53,5 +71,6 @@
         <input type="button" value="Sign in instead" class="b" />
       </a>
     </form>
+    <script src="script/sign.js"></script>
   </body>
 </html>
